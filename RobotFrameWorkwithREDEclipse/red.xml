@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <robotExecEnvironment path="/usr/bin" interpreter="Python"/>
+    <relativeTo>PROJECT</relativeTo>
+    <referencedLibrary type="VIRTUAL" name="XML.libspec" path="RobotFrameWorkwithREDEclipse/libspecs/XML.libspec"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="/usr/local/lib/python2.7/dist-packages/SeleniumLibrary/__init__.py"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

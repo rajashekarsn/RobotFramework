@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190621 13:16:41.139" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<suite source="/home/shanmukh/eclipse-workspace/RobotFrameWorkwithREDEclipse" id="s1" name="RobotFrameWorkwithREDEclipse">
+<suite source="/home/shanmukh/eclipse-workspace/RobotFrameWorkwithREDEclipse/FirstTestSuit.robot" id="s1-s1" name="FirstTestSuit">
+<test id="s1-s1-t1" name="My FirstTestCase">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello AK</arg>
+</arguments>
+<msg timestamp="20190621 13:16:41.793" level="INFO">Hello AK</msg>
+<status status="PASS" endtime="20190621 13:16:41.793" starttime="20190621 13:16:41.792"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>hiii</arg>
+</arguments>
+<msg timestamp="20190621 13:16:41.794" level="INFO">hiii</msg>
+<status status="PASS" endtime="20190621 13:16:41.795" starttime="20190621 13:16:41.794"></status>
+</kw>
+<status status="PASS" endtime="20190621 13:16:41.795" critical="yes" starttime="20190621 13:16:41.791"></status>
+</test>
+<status status="PASS" endtime="20190621 13:16:41.797" starttime="20190621 13:16:41.786"></status>
+</suite>
+<status status="PASS" endtime="20190621 13:16:41.799" starttime="20190621 13:16:41.735"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="RobotFrameWorkwithREDEclipse" pass="1">RobotFrameWorkwithREDEclipse</stat>
+<stat fail="0" id="s1-s1" name="FirstTestSuit" pass="1">RobotFrameWorkwithREDEclipse.FirstTestSuit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
