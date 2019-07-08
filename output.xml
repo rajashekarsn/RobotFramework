@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190708 18:12:20.730" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<suite source="/home/shanmukh/git/RobotFrameword__RED/RobotFrameWorkwithREDEclipse" id="s1" name="RobotFrameWorkwithREDEclipse">
+<suite source="/home/shanmukh/git/RobotFrameword__RED/RobotFrameWorkwithREDEclipse/FirstTestSuit.robot" id="s1-s1" name="FirstTestSuit">
+<test id="s1-s1-t1" name="TC_001_Demo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://robotframework.org</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190708 18:12:22.729" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org'.</msg>
+<status status="PASS" endtime="20190708 18:12:47.767" starttime="20190708 18:12:22.728"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190708 18:12:49.129" starttime="20190708 18:12:47.780"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4 seconds</arg>
+<arg>wait for display to be seen</arg>
+</arguments>
+<msg timestamp="20190708 18:12:53.131" level="INFO">Slept 4 seconds</msg>
+<msg timestamp="20190708 18:12:53.132" level="INFO">wait for display to be seen</msg>
+<status status="PASS" endtime="20190708 18:12:53.133" starttime="20190708 18:12:49.130"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190708 18:12:53.253" starttime="20190708 18:12:53.134"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>&lt;H1&gt;this is the first test case. &lt;\H1&gt;</arg>
+<arg>HTML</arg>
+</arguments>
+<msg timestamp="20190708 18:12:53.259" html="yes" level="INFO">&lt;H1&gt;this is the first test case. &lt;H1&gt;</msg>
+<status status="PASS" endtime="20190708 18:12:53.259" starttime="20190708 18:12:53.258"></status>
+</kw>
+<doc>This is the first test case. Here we are trying to open a browser, maximize the window and close it. We have added a html log at the end.</doc>
+<tags>
+<tag>TC01</tag>
+</tags>
+<status status="PASS" endtime="20190708 18:12:53.260" critical="yes" starttime="20190708 18:12:22.726"></status>
+</test>
+<test id="s1-s1-t2" name="TC_002_Call Keyword">
+<kw name="Test Browser">
+<tags>
+<tag>TC02</tag>
+</tags>
+<arguments>
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20190708 18:12:53.266" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/'.</msg>
+<status status="PASS" endtime="20190708 18:12:59.291" starttime="20190708 18:12:53.265"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190708 18:12:59.533" starttime="20190708 18:12:59.292"></status>
+</kw>
+<status status="PASS" endtime="20190708 18:12:59.534" starttime="20190708 18:12:53.264"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3 seconds</arg>
+<arg>wait for display to be seen</arg>
+</arguments>
+<msg timestamp="20190708 18:13:02.535" level="INFO">Slept 3 seconds</msg>
+<msg timestamp="20190708 18:13:02.536" level="INFO">wait for display to be seen</msg>
+<status status="PASS" endtime="20190708 18:13:02.536" starttime="20190708 18:12:59.535"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is a keyword call.</arg>
+</arguments>
+<msg timestamp="20190708 18:13:02.538" level="INFO">This is a keyword call.</msg>
+<status status="PASS" endtime="20190708 18:13:02.539" starttime="20190708 18:13:02.537"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190708 18:13:02.601" starttime="20190708 18:13:02.540"></status>
+</kw>
+<doc>Here our keyword "Test Browser" is called and variable is sent as an argument</doc>
+<status status="PASS" endtime="20190708 18:13:02.601" critical="yes" starttime="20190708 18:12:53.262"></status>
+</test>
+<test id="s1-s1-t3" name="TC_003_send arguments">
+<kw name="Test Browser">
+<tags>
+<tag>TC02</tag>
+</tags>
+<arguments>
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20190708 18:13:02.611" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" endtime="20190708 18:13:06.175" starttime="20190708 18:13:02.606"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190708 18:13:06.282" starttime="20190708 18:13:06.176"></status>
+</kw>
+<status status="PASS" endtime="20190708 18:13:06.283" starttime="20190708 18:13:02.604"></status>
+</kw>
+<status status="PASS" endtime="20190708 18:13:06.283" critical="yes" starttime="20190708 18:13:02.603"></status>
+</test>
+<test id="s1-s1-t4" name="TC_004_Data Driven example">
+<kw name="Test Browser">
+<tags>
+<tag>TC02</tag>
+</tags>
+<arguments>
+<arg>https://github.com/robotframework/RIDE/</arg>
+<arg>chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${arg1}</arg>
+<arg>${arg2}</arg>
+</arguments>
+<msg timestamp="20190708 18:13:06.286" level="INFO">Opening browser 'chrome' to base url 'https://github.com/robotframework/RIDE/'.</msg>
+<status status="PASS" endtime="20190708 18:13:10.207" starttime="20190708 18:13:06.286"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190708 18:13:10.317" starttime="20190708 18:13:10.208"></status>
+</kw>
+<status status="PASS" endtime="20190708 18:13:10.317" starttime="20190708 18:13:06.285"></status>
+</kw>
+<doc>Here our keyword "Test Browser" is called as a Template. Arguments are sent is sent as in the table.</doc>
+<tags>
+<tag>Data Driven</tag>
+<tag>TC04</tag>
+</tags>
+<status status="PASS" endtime="20190708 18:13:10.318" critical="yes" starttime="20190708 18:13:06.284"></status>
+</test>
+<status status="PASS" endtime="20190708 18:13:10.321" starttime="20190708 18:12:20.913"></status>
+</suite>
+<status status="PASS" endtime="20190708 18:13:10.336" starttime="20190708 18:12:20.887"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Data Driven</stat>
+<stat fail="0" pass="1">TC01</stat>
+<stat fail="0" pass="1">TC04</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="RobotFrameWorkwithREDEclipse" pass="4">RobotFrameWorkwithREDEclipse</stat>
+<stat fail="0" id="s1-s1" name="FirstTestSuit" pass="4">RobotFrameWorkwithREDEclipse.FirstTestSuit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
